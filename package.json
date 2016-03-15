@@ -35,6 +35,7 @@
     "webpack": "^1.12.13"
   },
   "dependencies": {
+    "joi": "^8.0.4",
     "vecks": "^2.0.0"
   }
 }
