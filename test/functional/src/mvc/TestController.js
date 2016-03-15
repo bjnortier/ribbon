@@ -12,7 +12,7 @@ class TestController extends tripcore.Controller {
   constructor(path) {
     super(new tripcore.Model());
     this.model.path = path;
-    this.model.ribbon = lib(path, {width: 1});
+    this.model.ribbon = lib.ribbon(path, {width: 1});
 
     const scene = new trip3.Scene($('#viewport'), {
       elevation: 1.08,
