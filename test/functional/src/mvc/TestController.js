@@ -20,7 +20,7 @@ class TestController extends tripcore.Controller {
     const scene = new trip3.Scene(sceneElem, {
       elevation: 1.08,
       azimuth: -Math.PI/2,
-      distance: 50,
+      distance: 20,
     });
     this.addView(scene, Path3View);
     this.addView(scene, Ribbon3View);

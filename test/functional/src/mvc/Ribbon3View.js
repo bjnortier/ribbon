@@ -25,7 +25,9 @@ class Ribbon3View extends trip3.View {
       geometry,
       new THREE.MeshLambertMaterial({
         color: 0x00ff00,
-        side: THREE.DoubleSide
+        side: THREE.DoubleSide,
+        transparent: true,
+        opacity: 0.5,
       }));
     this.sceneObject.add(mesh);
   }
