@@ -11,7 +11,7 @@ class Ribbon3View extends trip3.View {
 
   render() {
     const geometry = new THREE.Geometry();
-    this.model.ribbon.forEach((triangle) => {
+    this.model.ribbon.triangles.forEach((triangle) => {
       const i = geometry.vertices.push(
         new THREE.Vector3(triangle[0][0], triangle[0][1], triangle[0][2]));
       geometry.vertices.push(

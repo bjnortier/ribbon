@@ -6,6 +6,7 @@ const lib = require('../../../..');
 
 const Ribbon3View = require('./Ribbon3View');
 const Path3View = require('./Path3View');
+const RibbonOutline3View = require('./RibbonOutline3View');
 
 class TestController extends tripcore.Controller {
 
@@ -14,13 +15,16 @@ class TestController extends tripcore.Controller {
     this.model.path = path;
     this.model.ribbon = lib.ribbon(path, {width: 0.4});
 
-    const scene = new trip3.Scene($('#viewport'), {
+    const sceneElem = $('<div class="viewport"></div>');
+    $('#viewports').append(sceneElem);
+    const scene = new trip3.Scene(sceneElem, {
       elevation: 1.08,
       azimuth: -Math.PI/2,
       distance: 50,
     });
-    this.addView(scene, Ribbon3View);
     this.addView(scene, Path3View);
+    this.addView(scene, Ribbon3View);
+    this.addView(scene, RibbonOutline3View);
   }
 
 }
