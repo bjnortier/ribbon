@@ -1,7 +1,7 @@
 {
-  "name": "ribbon",
+  "name": "ribbon2.5",
   "version": "0.1.0",
-  "description": "2D and 3D ribbon from a polygon ",
+  "description": "2.5D ribbon from a polygon ",
   "main": "lib/index.js",
   "scripts": {
     "test": "gulp test && webpack"
