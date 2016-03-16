@@ -2,7 +2,6 @@ var webpack = require('webpack');
 
 module.exports = {
   entry: {
-    '2d.test': "./test/functional/src/2d.test.js",
     '3d.test': "./test/functional/src/3d.test.js",
     'vendor': ['trip.core', 'trip.three', 'trip.dom'],
   },
